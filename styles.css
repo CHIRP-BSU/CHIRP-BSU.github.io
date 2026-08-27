@@ -173,10 +173,14 @@ section + section { border-top: 1px solid var(--hairline); }
 /* ---------- People ---------- */
 .people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .person-card { text-align: left; }
-.person-photo { aspect-ratio: 1; margin-bottom: 14px; border-radius: var(--radius); }
+.person-photo { aspect-ratio: 1; margin-bottom: 14px; border-radius: var(--radius); overflow: hidden; background: var(--maroon-050); }
+.person-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.alumni-grid { grid-template-columns: repeat(2, 1fr); max-width: 620px; }
 .person-card h3 { font-size: 17px; margin-bottom: 2px; }
 .person-role { font-family: var(--font-mono); font-size: 12px; color: var(--maroon-700); margin-bottom: 6px; }
 .person-focus { font-size: 13.5px; color: var(--text-secondary); margin: 0; }
+.person-links { display: flex; gap: 14px; margin-top: 10px; }
+.person-links a { font-family: var(--font-mono); font-size: 12px; }
 .placeholder-card { opacity: 0.72; }
 .alumni-note {
   margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--hairline);
