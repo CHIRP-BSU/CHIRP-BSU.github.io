@@ -151,7 +151,7 @@ section + section { border-top: 1px solid var(--hairline); }
 .fact-list li span:first-child { color: var(--text-tertiary); font-family: var(--font-mono); font-size: 12.5px; }
 
 /* ---------- Card grid (Research / Projects) ---------- */
-.card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; }
 .card {
   background: var(--cream-raised); border: 1px solid var(--hairline); border-radius: var(--radius);
   overflow: hidden; padding: 0;
@@ -162,7 +162,7 @@ section + section { border-top: 1px solid var(--hairline); }
 .card-body h3 { font-size: 19px; margin-bottom: 8px; }
 .card-body p { color: var(--text-secondary); font-size: 14.5px; margin: 0; }
 
-.projects-grid { grid-template-columns: repeat(3, 1fr); }
+.projects-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .project-card { padding: 22px 24px 24px; }
 .card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 6px; }
 .card-top h3 { font-size: 18px; margin: 0; }
@@ -207,6 +207,13 @@ section + section { border-top: 1px solid var(--hairline); }
 }
 .news-date { font-family: var(--font-mono); color: var(--maroon-700); font-size: 13px; }
 .news-text { color: var(--text-secondary); }
+
+/* ---------- Gallery ---------- */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.gallery-item { margin: 0; }
+.gallery-image { aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; }
+.gallery-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-item figcaption { margin-top: 10px; font-size: 13.5px; color: var(--text-secondary); }
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
@@ -258,6 +265,7 @@ footer p { color: var(--text-tertiary); font-size: 13px; margin: 0; }
   }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: 1fr; }
   .people-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { padding-top: 72px; padding-bottom: 64px; }
