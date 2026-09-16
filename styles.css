@@ -81,6 +81,7 @@ a:hover { text-decoration: underline; }
 }
 .nav-links a { color: var(--text-secondary); font-size: 14.5px; font-weight: 500; }
 .nav-links a:hover { color: var(--ink); text-decoration: none; }
+.nav-links a.active { color: var(--ink); }
 .nav-toggle {
   display: none; background: none; border: 1px solid var(--hairline); border-radius: 6px;
   font-size: 18px; padding: 6px 10px; cursor: pointer;
