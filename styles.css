@@ -172,7 +172,7 @@ section + section { border-top: 1px solid var(--hairline); }
 .project-card p:last-child { color: var(--text-secondary); font-size: 14px; margin: 0; }
 
 /* ---------- People ---------- */
-.people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
 .person-card { text-align: left; }
 .person-photo { aspect-ratio: 1; margin-bottom: 14px; border-radius: var(--radius); overflow: hidden; background: var(--maroon-050); }
 .person-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
