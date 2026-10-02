@@ -207,7 +207,12 @@ section + section { border-top: 1px solid var(--hairline); }
   padding: 16px 0; border-bottom: 1px solid var(--hairline); font-size: 14.5px;
 }
 .news-date { font-family: var(--font-mono); color: var(--maroon-700); font-size: 13px; }
-.news-text { color: var(--text-secondary); }
+.news-text { color: var(--text-secondary); margin: 0; }
+.news-image {
+  margin-top: 14px; max-width: 320px; border-radius: var(--radius);
+  overflow: hidden; border: 1px solid var(--hairline);
+}
+.news-image img { width: 100%; display: block; }
 
 /* ---------- Gallery ---------- */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
